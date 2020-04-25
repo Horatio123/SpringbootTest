@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+country: us
+person:
+  name: Alexander
+  hometown: shaoxing
+  birthday: 1992/5/14
+
+
+  maps: {k1: shanghai, k2: hangzhou}
+  hobbies:
+    - swim
+    - bike
+
+  dog:
+    name: spike
+    age: ${random.int}
