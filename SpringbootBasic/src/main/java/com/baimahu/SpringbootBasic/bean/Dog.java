@@ -1,4 +1,4 @@
-package com.baimuhu.SpringbootTest.bean;
+package com.baimahu.SpringbootBasic.bean;
 
 public class Dog {
     private String name;

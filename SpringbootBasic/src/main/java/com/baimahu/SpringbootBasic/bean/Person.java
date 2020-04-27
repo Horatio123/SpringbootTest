@@ -1,4 +1,4 @@
-package com.baimuhu.SpringbootTest.bean;
+package com.baimahu.SpringbootBasic.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
@@ -10,6 +10,7 @@ import java.util.Map;
 
 //@PropertySource("classpath:person.properties")
 //@PropertySource(value = {"classpath:person.properties"})
+@PropertySource("classpath:application.yml")
 @Component
 @ConfigurationProperties(prefix = "person")
 public class Person {
