@@ -1,4 +1,4 @@
-package org.example;
+package com.baimahu;
 
 import static org.junit.Assert.assertTrue;
 
