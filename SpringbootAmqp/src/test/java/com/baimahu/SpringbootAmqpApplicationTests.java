@@ -26,11 +26,10 @@ public class SpringbootAmqpApplicationTests {
 
 
     @Test
-    public void contextLoads() {
+    public void send() {
         Map<String, Object> map = new HashMap<>();
         map.put("msg", "this is msg");
         map.put("data", Arrays.asList("rabbit", 123, true));
-
         rabbitTemplate.convertAndSend("amq.direct", "baimahu", map);
 
     }
