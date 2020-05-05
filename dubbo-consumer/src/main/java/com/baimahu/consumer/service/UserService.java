@@ -2,7 +2,6 @@ package com.baimahu.consumer.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.baimahu.provider.service.TicketService;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
