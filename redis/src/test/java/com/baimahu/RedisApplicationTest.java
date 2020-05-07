@@ -54,11 +54,11 @@ public class RedisApplicationTest {
         Employee emp = employeeMapper.getEmployeeById(1);
         System.out.println(emp);
 
-        employee.setLastName("Alexander");
-        employeeMapper.updateEmployee(employee);
-        emp = employeeMapper.getEmployeeById(1);
-        System.out.println(emp);
-
-        employeeMapper.deleteEmployee(1);
+//        employee.setLastName("Alexander");
+//        employeeMapper.updateEmployee(employee);
+//        emp = employeeMapper.getEmployeeById(1);
+//        System.out.println(emp);
+//
+//        employeeMapper.deleteEmployee(1);
     }
 }
