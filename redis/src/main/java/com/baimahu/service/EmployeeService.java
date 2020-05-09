@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class EmployeeService {
     @Autowired
     EmployeeMapper employeeMapper;
-    @Cacheable(cacheNames = {"emp"}, condition = "#id>0")
+    //@Cacheable(cacheNames = {"emp"}, condition = "#id>0")
     public Employee getEmp(Integer id) {
         System.out.println("search " + id);
         return employeeMapper.getEmployeeById(id);
