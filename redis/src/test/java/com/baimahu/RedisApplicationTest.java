@@ -1,7 +1,9 @@
 package com.baimahu;
 
+import com.baimahu.bean.Department;
 import com.baimahu.bean.Employee;
 import com.baimahu.mapper.EmployeeMapper;
+import com.baimahu.service.DepartmentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class RedisApplicationTest {
     @Autowired
     EmployeeMapper employeeMapper;
+
+    @Autowired
+    DepartmentService departmentService;
 
     @Autowired
     RedisTemplate<Object, Employee> employeeRedisTemplate;
@@ -58,5 +63,13 @@ public class RedisApplicationTest {
 //        System.out.println(emp);
 //
 //        employeeMapper.deleteEmployee(1);
+    }
+
+    @Test
+    public void testDept() {
+        //Department department = new Department(1,"cloud");
+        //departmentService.insertDept(department);
+        Department dep = departmentService.getDept(1);
+        System.out.println(dep);
     }
 }

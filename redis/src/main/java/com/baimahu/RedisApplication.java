@@ -41,6 +41,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @MapperScan("com.baimahu.mapper")
 @SpringBootApplication
+@EnableCaching
 public class RedisApplication {
     public static void main(String[] args) {
         SpringApplication.run(RedisApplication.class, args);
