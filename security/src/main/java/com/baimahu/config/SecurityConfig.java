@@ -13,7 +13,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/level1/**").hasRole("VIP1")
                 .antMatchers("/level2/**").hasRole("VIP2")
                 .antMatchers("/level3/**").hasRole("VIP3");
-        http.formLogin();
+        http.formLogin().usernameParameter("user").passwordParameter("pwd").loginPage("/userlogin");
+        http.logout().logoutSuccessUrl("/");
+        http.rememberMe();
     }
 
     @Override
